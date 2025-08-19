@@ -1,5 +1,8 @@
-﻿@page
-@model TWTodoList.Views.Test.indexModel
-@{
-    <h1>Olá Mundo!!!</h1>
+﻿@{
+    var todo = ViewData["todo"] as Todo;
 }
+    <h1>
+    @todo?.Title
+    </h1>
+    <p>@todo?.Description</p>
+
